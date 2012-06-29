@@ -15,8 +15,7 @@
         <tr>
           <th>
             <label data-for="support_email">
-              {{ _("Email") }}
-              {{ tip(None,
+              {{ tip(_("Email"),
                      _("The email address used by end users to contact you
                         with support issues and refund requests. If you have
                         different addresses for each language multiple
@@ -38,15 +37,14 @@
         <tr>
           <th>
             <label data-for="support_url">
-              {{ _("Website") }}
               {% if webapp %}
-                {{ tip(None,
+                {{ tip(_("Website"),
                        _("If your app has a support website or forum, enter
                           its address here. If your website is localized into
                           other languages, multiple translations of this
                           field can be added.")) }}
               {% else %}
-                {{ tip(None,
+                {{ tip(_("Website"),
                        _("If your add-on has a support website or forum, enter
                           its address here. If your website is localized into
                           other languages, multiple translations of this field can

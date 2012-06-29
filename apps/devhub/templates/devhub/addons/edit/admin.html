@@ -20,12 +20,11 @@
           <tr>
             <th>
               <label data-for="trusted">
-                Trusted?
                 {% if webapp %}
-                  {{ tip(None,
+                  {{ tip(_("Trusted?"),
                          'Trusted apps can become public without editor review.') }}
                 {% else %}
-                  {{ tip(None,
+                  {{ tip(_("Trusted?"),
                          'Trusted add-ons can become public without editor review.') }}
                 {% endif %}
               </label>
@@ -60,12 +59,12 @@
             <th>
               <label data-for="guid">
                 {% if webapp %}
-                  App GUID
+                  {{ tip(_("App GUID"),
+                         "Only change if you understand all of the consequences.") }}
                 {% else %}
-                  Add-on GUID
+                  {{ tip(_("Add-on GUID"),
+                         "Only change if you understand all of the consequences.") }}
                 {% endif %}
-                {{ tip(None,
-                       "Only change if you understand all of the consequences.") }}
               </label>
             </th>
             <td>
@@ -76,8 +75,7 @@
           <tr>
             <th>
               <label data-for="target_locale">
-                Target Locale
-                {{ tip(None,
+                {{ tip(_("Target Locale"),
                        "Only applicable to dictionaries and language packs,
                         this identifies the language and, optionally, region
                         that this add-on is written for. Examples: en-US, fr,
@@ -91,8 +89,7 @@
           <tr>
             <th>
               <label data-for="locale_disambiguation">
-                Additional Locale Info
-                {{ tip(None,
+                {{ tip(_("Additional Locale Info"),
                        "Only applicable to dictionaries and language packs,
                         this is a short identifier to differentiate this
                         add-on from other similar add-ons (for example,

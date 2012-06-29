@@ -24,15 +24,14 @@
           <tr>
             <th>
               <label data-for="description">
-                {{ _('Description') }}
                 {% if webapp %}
                   {# TODO(apps): Finalize copy. #}
-                  {{ tip(None,
+                  {{ tip(_("Description"),
                          "A longer explanation of features, functionality, and
                           other relevant information. This field is displayed
                           only on the app's details page.") }}
                 {% else %}
-                  {{ tip(None,
+                  {{ tip(_("Description"),
                          _("A longer explanation of features,
                             functionality, and other relevant information. This
                             field is only displayed on the add-on's details
@@ -79,16 +78,15 @@
           <tr>
             <th>
               <label data-for="homepage">
-                {{ _("Homepage") }}
                 {% if webapp %}
                   {# TODO(apps): Finalize copy. #}
-                  {{ tip(None,
+                  {{ tip(_("Homepage"),
                          "If your app has another homepage, enter its
                           address here. If your website is localized into other
                           languages multiple translations of this field can be
                           added.") }}
                 {% else %}
-                  {{ tip(None,
+                  {{ tip(_("Homepage"),
                          _("If your add-on has another homepage, enter its
                             address here. If your website is localized into other
                             languages multiple translations of this field can be

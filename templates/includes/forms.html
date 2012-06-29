@@ -50,8 +50,10 @@
 {% endmacro %}
 
 {% macro tip(name, tip) %}
-  {% if name %}
-    <span class="label">{{ name }}</span>
-  {% endif %}
-  <span class="tip tooltip" title="{{ tip }}">?</span>
+  <span class="tooltip" title="{{ tip }}">
+    {% if name %}
+      <span class="label">{{ name }}</span>
+    {% endif %}
+    <span class="tip"></span>
+  </span>
 {% endmacro %}

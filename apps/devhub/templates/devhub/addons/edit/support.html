@@ -17,8 +17,7 @@
           <tr>
             <th>
               <label data-for="support_email">
-                {{ _("Email") }}
-                {{ tip(None,
+                {{ tip(_("Email"),
                        _("If you wish to display an e-mail address for support
                           inquiries, enter it here. If you have different
                           addresses for each language multiple translations of
@@ -39,17 +38,16 @@
           <tr>
             <th>
               <label data-for="support_url">
-                {{ _("Website") }}
                 {% if webapp %}
                   {# TODO(apps): Finalize copy. #}
-                  {{ tip(None,
+                  {{ tip(_("Website"),
                          "If your app has a support website or forum, enter
                           its address here. If your website is localized into
                           other languages, multiple translations of this field can
                           be added. If you use a GetSatisfaction URL, users will
                           be able to interact with a GetSatisfaction widget.") }}
                 {% else %}
-                  {{ tip(None,
+                  {{ tip(_("Website"),
                          _("If your add-on has a support website or forum, enter
                             its address here. If your website is localized into
                             other languages, multiple translations of this field can

@@ -64,11 +64,10 @@
               <tr{% if form_basic.slug.errors %} class="error"{% endif %}>
                 <th>
                   <label for="{{ form_basic.slug.auto_id }}">
-                    {{ _('App URL') }}
+                  {{ tip(_("App URL"), _("Select a unique URL for your detail page. "
+                                         "By default we use your app name to create "
+                                         "this URL.")) }}
                   </label>
-                  {{ tip(None, _('Select a unique URL for your detail page. '
-                                 'By default we use your app name to create '
-                                 'this URL.')) }}
                 </th>
                 <td>
                   <div class="edit_with_prefix c">

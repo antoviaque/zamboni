@@ -18,16 +18,15 @@
           <tr>
             <th>
               <label data-for="developer_comments">
-                {{ _("Developer Comments") }}
                 {% if webapp %}
-                  {{ tip(None,
+                  {{ tip(_("Developer Comments"),
                          _("Any information end users may want to know that isn't
                             necessarily applicable to the app summary or description.
                             Common uses include listing known major bugs, information on
                             how to report bugs, anticipated release date of a new version,
                             etc.")) }}
                 {% else %}
-                  {{ tip(None,
+                  {{ tip(_("Developer Comments"),
                          _("Any information end users may want to know that isn't
                             necessarily applicable to the add-on summary or description.
                             Common uses include listing known major bugs, information on
@@ -132,13 +131,10 @@
             {% endif %}
             <tr>
               <th>
-                <abbr title="{{ _('Universally unique identifier') }}" class="label">
-                  {{ _('UUID') }}
-                </abbr>
-                <span class="tip tooltip" title="{% trans -%}The UUID of your
-                  add-on is specified in its install manifest and uniquely
-                  identifies it. You cannot change your UUID once it has been
-                  submitted.{%- endtrans %}">?</span>
+                {{ tip(_("UUID"),
+                       _("The UUID (Universally unique identifier) of your add-on is 
+                          specified in its install manifest and uniquely identifies 
+                          it. You cannot change your UUID once it has been submitted.")) }}
               </th>
               <td>
                 {{ addon.guid }}
